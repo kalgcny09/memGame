@@ -1,0 +1,138 @@
+.container {
+	background: url("images/stadium2.png");
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+/*	background-attachment: fixed;
+	background-size: cover;
+	*/
+	height: 600px;
+
+}
+
+
+img {
+	max-width: 100%; /*dont let images escape their parents*/
+	
+}
+
+.firstRow {
+	height: 85px;
+}
+
+.textBox {
+	background-color: white;
+	margin-top: 25px;
+}
+
+
+#Score {
+	color: yellow;
+	font-size: 13px;
+	text-shadow: 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue;
+
+}
+
+#button {
+	/*margin-left: 600px;*/
+	background-color: #192653;
+	color: #FFCB05;
+	height: 5px;
+
+}
+
+#startGameB {
+/*	margin-left: 10px;*/
+	background-color: #192653;
+	color: #FFCB05;
+	height: 25px;
+
+}
+
+#ashScreen {
+	margin-left: 25px;
+	animation-name: fadein;
+	animation-duration: 2s;
+
+
+}
+
+@keyframes fadein  {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+p{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: type 4s steps(60,end);
+
+}
+
+p:nth-child(2) {
+	opacity: 0;
+	animation: type2 4s steps(60,end);
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type{ 
+  from { width: 0;}
+  to { width: 100%;}
+} 
+
+@keyframes type2{
+
+  from { width: 0; }
+  to { width: 100%;}
+  from {opacity: 0;}
+  1% {opacity: 1;2}
+  to {opacity: 1;}
+} 
+
+
+
+
+
+.card {
+	height: 270px;
+	min-width: 270px;
+	border: 2px solid black;
+	perspective: 500px;
+	padding: 0px;
+/*	margin: 5px;*/
+}
+
+.card-holder {
+	width: 270px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 1s all;
+}
+
+.card-front, .card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	opacity: 0.5;
+}
+
+.card-front {
+	transform: rotateY(180deg);
+
+}
+
+.card-back {
+	background: url('images/poke-logo.png') no-repeat 50%;
+	height: 270px;
+	min-width: 270px;
+}
+
+.flip {
+	transform: rotateY(180deg);
+}
+
+.matched {
+	transform: rotateY(540deg);
+}
