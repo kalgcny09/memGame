@@ -20,12 +20,14 @@ img {
 }
 
 .textBox {
-	background-color: white;
 	margin-top: 25px;
+	background-color: green;
+	opacity: 0.5;
+
 }
 
 
-#Score {
+/*#Score {
 	color: yellow;
 	font-size: 13px;
 	text-shadow: 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue;
@@ -33,23 +35,24 @@ img {
 }
 
 #button {
-	/*margin-left: 600px;*/
 	background-color: #192653;
 	color: #FFCB05;
 	height: 5px;
 
-}
+}*/
 
 #startGameB {
 /*	margin-left: 10px;*/
 	background-color: #192653;
 	color: #FFCB05;
 	height: 25px;
+	/*animation-name: fadein;*/
+	animation-duration: 30s;
 
 }
 
 #ashScreen {
-	margin-left: 25px;
+	margin-left: 45px;
 	animation-name: fadein;
 	animation-duration: 2s;
 
@@ -66,6 +69,8 @@ p{
 	white-space: nowrap;
 	margin: 0 auto;
 	animation: type 4s steps(60,end);
+	color: white;
+	text-align: center;
 
 }
 
@@ -74,6 +79,15 @@ p:nth-child(2) {
 	animation: type2 4s steps(60,end);
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
+	
+}
+
+p:nth-child(3) {
+	opacity: 0;
+	animation: type2 4s steps(60,end);
+	animation-delay: 7s;
+	animation-fill-mode: forwards;
+	
 }
 
 @keyframes type{ 
@@ -86,11 +100,13 @@ p:nth-child(2) {
   from { width: 0; }
   to { width: 100%;}
   from {opacity: 0;}
-  1% {opacity: 1;2}
+  1% {opacity: 1;}
   to {opacity: 1;}
 } 
 
-
+.gamestart {
+	
+}
 
 
 
