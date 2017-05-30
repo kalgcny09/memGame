@@ -10,7 +10,7 @@ img {
 
 #Score {
 	color: yellow;
-	font-size: 13px;
+	font-size: 25px;
 	text-shadow: 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue;
 
 }
@@ -21,6 +21,14 @@ img {
 	color: #FFCB05;
 	height: 25px;
 	text-align: center;
+
+}
+
+#teamRocket {
+	color: red;
+	font-size: 20px;
+	text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+
 
 }
 
