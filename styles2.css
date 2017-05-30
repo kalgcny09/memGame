@@ -32,6 +32,12 @@ img {
 
 }
 
+.gameBoard {
+	font-size: 72px;
+	color: red;
+	text-align: center;
+}
+
 
 .card {
 	height: 270px;

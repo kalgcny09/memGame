@@ -64,7 +64,7 @@ $(document).ready(function(){
 				cardsUp.addClass('matched'); 
 				var matchedCards = $('.matched');
 
-				$('#Score').html("Matches " + matchedCards.length/2);
+				$('#Score').html("Matches " + matchedCards.length/2 +"/6");
 				if (matchedCards.length == gridSize){
  					setTimeout(function(){
 						alert("We beat Team Rocket! Thanks for your help!");
@@ -73,6 +73,11 @@ $(document).ready(function(){
 					
 			}else{
 				setTimeout(function(){
+					failedMatches += 1;
+					$('#teamRocket').html("TEAM ROCKET " + failedMatches + "/4");
+					if(failedMatches == 4){
+						$('.gameBoard').html("Team Rocket won...</br>You failed! You're no Pokemon Master!");
+					}
 					cardsUp.removeClass('flip');
 				}, 2000);
 			
