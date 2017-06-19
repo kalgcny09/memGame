@@ -23,6 +23,7 @@ img {
 	background-color: #192653;
 	color: #FFCB05;
 	opacity: 0.5;
+	font-color: yellow;
 
 }
 
@@ -55,7 +56,7 @@ p{
 	white-space: nowrap;
 	margin: 0 auto;
 	animation: type 4s steps(60,end);
-	color: white;
+	color: #FFCB05;
 	text-align: center;
 
 }
