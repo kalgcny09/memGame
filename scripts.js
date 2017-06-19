@@ -103,6 +103,8 @@ $(document).ready(function(){
 });
 
 
+
+
 // if (cardsUp.removeClass('flip')){
 // 		failedMatches += 1;
 // 		$('#teamRocket').html("TEAM ROCKET " + (failedMatches));
