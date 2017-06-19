@@ -1,18 +1,18 @@
 $(document).ready(function(){
 
 	var cards = [
-	'<img src="images/monsters-01.png">',
-	'<img src="images/monsters-02.png">',
-	'<img src="images/monsters-03.png">',
-	'<img src="images/monsters-04.png">',
-	'<img src="images/monsters-17.png">',
-	'<img src="images/monsters-18.png">',
-	'<img src="images/monsters-01.png">',
-	'<img src="images/monsters-02.png">',
-	'<img src="images/monsters-03.png">',
-	'<img src="images/monsters-04.png">',
-	'<img src="images/monsters-17.png">',
-	'<img src="images/monsters-18.png">'
+	'<img src="images/pokemon-bulbasaur.png">',
+	'<img src="images/pokemon-pickachu.png">',
+	'<img src="images/pokemon-charmander.png">',
+	'<img src="images/pokemon-mew.png">',
+	'<img src="images/pokemon-mewtwo.png">',
+	'<img src="images/pokemon-squirtle.png">',
+	'<img src="images/pokemon-bulbasaur.png">',
+	'<img src="images/pokemon-pickachu.png">',
+	'<img src="images/pokemon-charmander.png">',
+	'<img src="images/pokemon-mew.png">',
+	'<img src="images/pokemon-mewtwo.png">',
+	'<img src="images/pokemon-squirtle.png">'
 	];
 	
 	var copyCards = cards.slice();
